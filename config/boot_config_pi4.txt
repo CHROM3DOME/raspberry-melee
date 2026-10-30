@@ -1,0 +1,31 @@
+# ==============================================================================
+# Recommended /boot/config.txt Settings for Raspberry Pi 4 / 400 / CM4
+# Optimized for Super Smash Bros. Melee Mesa KMS/DRM 480p Locked 60 FPS
+# ==============================================================================
+
+# Enable Full Mesa KMS Hardware Acceleration (VideoCore VI)
+# Note: Do not use vc4-fkms-v3d (Fake KMS), as direct scanout requires full KMS.
+dtoverlay=vc4-kms-v3d
+
+# GPU Memory allocation for VideoCore VI KMS scanout buffers
+gpu_mem=128
+
+# Framebuffer and HDMI configuration
+max_framebuffers=2
+hdmi_force_hotplug=1
+
+# Native 480p NTSC Timing Profile (Optional: For dedicated 480p CRT / monitor)
+# hdmi_group=1
+# hdmi_mode=2   # 480p 60Hz 4:3
+
+# Enable 64-bit kernel if using 64-bit userland (arm64 / aarch64)
+# arm_64bit=1
+
+# Safe Overclocking Profile (Optional, for 4-player Fountain of Dreams stability)
+# Ensure adequate active cooling (fan or heatsink case) before enabling:
+# arm_freq=1800
+# gpu_freq=600
+# over_voltage=4
+
+# Audio configuration
+dtparam=audio=on

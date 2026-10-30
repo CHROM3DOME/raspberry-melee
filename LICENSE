@@ -1,0 +1,24 @@
+# Licensing & Intellectual Property Notice
+
+This distribution contains modifications, patches, scripts, and configuration files for running Super Smash Bros. Melee on the Raspberry Pi family (Pi Zero 2W, Pi Tin Handheld, and Raspberry Pi 4 / 400 / CM4).
+
+## 1. Game Code & Nintendo Intellectual Property — NOT LICENSED
+The decompiled game logic in `src/melee/` and `src/sysdolphin/` is derived from the upstream Super Smash Bros. Melee reverse engineering project.
+
+Super Smash Bros. Melee is copyright (C) 2001 Nintendo / HAL Laboratory, Inc.
+No permission to copy, commercialize, or relicense the original game code is granted or implied.
+
+**NO GAME ASSETS ARE INCLUDED IN THIS DISTRIBUTION.**
+No copyrighted ROMs, ISOs, character models, music, sound effects, textures, or DOL binaries are distributed within these patches or scripts. All runtime assets, textures, and font atlases must be extracted directly by the end-user from a legitimately acquired, user-dumped GameCube disc image (`game.iso` / `GALE01.iso`, v1.02).
+
+## 2. Raspberry Pi Port Code — GPL-3.0-or-later
+All original port code, including:
+- OpenGL ES 2.0 / KMSDRM multi-threaded decoupled rendering backend (`src/port/port_gx.c`, `src/port/port_render_thread.c`)
+- Low-latency UDP netplay engine (`src/port/port_net.c`, `include/port/port_net.h`)
+- Hardware controller mapping and EmulationStation lifecycle management (`src/port/port_pad.c`)
+- Video interface and adaptive 60Hz frame pacing (`src/port/port_vi.c`)
+- Build scripts, launcher scripts, and hardware configuration profiles
+
+are distributed under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.

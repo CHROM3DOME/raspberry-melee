@@ -1,0 +1,103 @@
+{
+  "profile": "Pi Tin Handheld Gamepad",
+  "version": "1.0",
+  "device_name": "GPIOnext Joypad 1",
+  "guid": "030000000f270000b822000001000000",
+  "pins": {
+    "A": {
+      "gpio": 4,
+      "event": "BTN_A",
+      "code": 304,
+      "button_id": 0,
+      "action": "A Button / Primary Action"
+    },
+    "B": {
+      "gpio": 17,
+      "event": "BTN_B",
+      "code": 305,
+      "button_id": 1,
+      "action": "B Button / Secondary Action"
+    },
+    "X": {
+      "gpio": 27,
+      "event": "BTN_X",
+      "code": 307,
+      "button_id": 2,
+      "action": "X Button / Special 1"
+    },
+    "Y": {
+      "gpio": 22,
+      "event": "BTN_Y",
+      "code": 308,
+      "button_id": 3,
+      "action": "Y Button / Special 2"
+    },
+    "L": {
+      "gpio": 5,
+      "event": "BTN_TL",
+      "code": 310,
+      "button_id": 4,
+      "action": "Left Shoulder (L)"
+    },
+    "R": {
+      "gpio": 6,
+      "event": "BTN_TR",
+      "code": 311,
+      "button_id": 5,
+      "action": "Right Shoulder (R)"
+    },
+    "Z": {
+      "gpio": 13,
+      "event": "BTN_TR2",
+      "code": 313,
+      "button_id": 7,
+      "action": "Z Trigger / Grab"
+    },
+    "SELECT": {
+      "gpio": 19,
+      "event": "BTN_SELECT",
+      "code": 314,
+      "button_id": 8,
+      "action": "Select Button / Modifier"
+    },
+    "START": {
+      "gpio": 26,
+      "event": "BTN_START",
+      "code": 315,
+      "button_id": 9,
+      "action": "Start / Pause"
+    },
+    "HOTKEY": {
+      "gpio": 21,
+      "event": "BTN_TRIGGER_HAPPY2",
+      "code": 705,
+      "button_id": 10,
+      "action": "Hardware Exit Hotkey"
+    },
+    "DPAD_UP": {
+      "gpio": 16,
+      "axis": 1,
+      "direction": -1,
+      "action": "D-Pad Up"
+    },
+    "DPAD_DOWN": {
+      "gpio": 20,
+      "axis": 1,
+      "direction": 1,
+      "action": "D-Pad Down"
+    },
+    "DPAD_LEFT": {
+      "gpio": 23,
+      "axis": 0,
+      "direction": -1,
+      "action": "D-Pad Left"
+    },
+    "DPAD_RIGHT": {
+      "gpio": 24,
+      "axis": 0,
+      "direction": 1,
+      "action": "D-Pad Right"
+    }
+  },
+  "sdl_gamecontroller_mapping": "030000000f270000b822000001000000,GPIOnext Joypad 1,platform:Linux,a:b0,b:b1,x:b2,y:b3,back:b8,start:b9,guide:b10,leftshoulder:b4,rightshoulder:b5,lefttrigger:b6,righttrigger:b7,leftx:a0,lefty:a1,dpup:-a1,dpdown:+a1,dpleft:-a0,dpright:+a0,"
+}
